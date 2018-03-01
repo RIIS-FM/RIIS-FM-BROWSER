@@ -3,17 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="../css/grid.css" />
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/trade_issue_commit1.js"></script>
 <title>运输需求提交1</title>
 </head>
 
 <body>
 <!--pop通用弹窗-->		
-	<div class="pop_container">
+	<div class="pop_container" id="pop" style="display:none;">
 		<div class="pop_std">
-			<div class="tt"><a href="#"></a>选择收货经办人</div>		
+			<div class="tt" ><a href="#" onclick="showPop()" ></a>选择收货经办人</div>		
 			
 			<div class="pop_tab2_ct"><!--当前容器内容为每个弹窗不同的部分，其外上下部分所有弹窗通用（标题文字不同）-->	
-				<table class="pop_tab2">
+				<table class="pop_tab2" id="tab_pop">
 					<thead>
 						<tr>
 							<th width="60">姓名</th>
@@ -34,7 +36,7 @@
 								<p class="txal">成都市青羊工业总部基地N33青羊工业总部基地N33青羊工业总部基地N33</p>
 								<p class="txal">610000</p>
 							</td>
-							<td><a href="#" class="btn_24b">选择</a></td>
+							<td><a href="#" class="btn_24b" onclick="()" >选择</a></td>
 						</tr>
 						<tr>
 							<td>张三</td>
@@ -231,20 +233,24 @@
 				</dl>
 				<dl>
 					<dt>选择经办人</dt>
-					<dd>
+					<dd id="choose1" style="display: ;">
+						<a href="#" class="add_btn" onclick="showPop()">+选择发货经办人</a>
+						<a href="#" class="add_btn" onclick="showPop()">+选择收货经办人</a>
+					</dd>
+					<dd id="choose2" style="display:none;">
 						<div class="operator_infos">
-							<a href="#" class="switch_op">更换</a>
-							<p class="txs18 ch1"><b>中国通号设计研究院集团有限公司成都分公司</b>&nbsp;<b class="txs16 ch3">(托运人)</b></p>
-							<p class="ch1 txs14"><b>张三&nbsp;13823564598</b></p>
-							<p class="pdt05">地址：成都市青羊区日月大道299号青羊工业基地N区33栋成都市青羊区日月大道299号青羊工业基地</p>
+							<a href="#" class="switch_op" onclick="showPop()">更换</a>
+							<p class="txs18 ch1"><b id="tyr">中国通号设计研究院集团有限公司成都分公司</b>&nbsp;<b class="txs16 ch3">(托运人)</b></p>
+							<p class="ch1 txs14"><b id="shjbr">张三&nbsp;13823564598</b></p>
+							<p class="pdt05" id="dz">地址：成都市青羊区日月大道299号青羊工业基地N区33栋成都市青羊区日月大道299号青羊工业基地</p>
 							<p>邮编：610000</p>
 							<p>邮箱：zhangyuanwai@crsc.com</p>
 						</div>
 						<div class="operator_infos">
-							<a href="#" class="switch_op">更换</a>
+							<a href="#" class="switch_op" onclick="showPop()">更换</a>
 							<p class="txs18 ch1"><b>中国铁路总公司工程管理中心</b>&nbsp;<b class="txs16 ch3">(收货人)</b></p>
 							<p class="ch1 txs14"><b>张三&nbsp;13823564598</b></p>
-							<p class="pdt05">地址：成都市青羊区日月大道299号青羊工业基地N区33栋</p>
+		 					<p class="pdt05">地址：成都市青羊区日月大道299号青羊工业基地N区33栋</p>
 							<p>邮编：610000</p>
 							<p>邮箱：zhangyuanwai@crsc.com</p>
 						</div>
@@ -286,7 +292,7 @@
 				<dl>
 					<dt></dt>
 					<dd>
-						<a href="#" class="btn_50g">提交</a>
+						<a href="#" class="btn_50g" onclick="saveFastTrade();">提交</a>
 						<a href="#" class="btn_50b">保存</a>
 						<a href="#" class="btn_resetform">清空</a>
 					</dd>
