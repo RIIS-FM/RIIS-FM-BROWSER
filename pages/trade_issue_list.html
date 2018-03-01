@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../css/grid.css" />
+<title>运输需求列表</title>
+</head>
+
+<body>
+<!--pop通用弹窗-->		
+	<!--<div class="pop_container">
+		<div class="pop_std">
+			<div class="tt"><a href="#"></a>审核未通过详情</div>				
+			<div class="pop_ct1">	
+				<div class="sep_tt">审核日期：2018.01.09</div>
+				<div class="pdt10">审核未通过原因：<span class="cr1 pdl10">货运高峰期，列车档期已满，建议往后顺延或选择其他运输方式</span></div>					
+			</div>				
+		</div>
+		<div class="pop_windows"></div>		
+	</div>-->
+<!--pop通用弹窗 end-->
+<div class="main_container">	
+	<div class="station_top">
+		<div class="dfr pdt30">			
+			<span class="pdr20 cb2">ABC集团 已登录</span>
+			<a href="#" class="">退出</a>
+		</div>
+		<img src="../img/logo_station.png" />
+	</div>
+	<!--主导航-->
+	<div class="station_nav">
+		<div class="ct">
+			<a href="#">用户中心</a>
+			<a href="#">大客户管理</a>
+			<a href="#" class="on">交易管理</a>
+			<a href="#">统计报表</a>
+			<a href="#">货损理赔</a>
+			<a href="#">客户评价</a>
+		</div>
+	</div>
+	<!--主导航 end-->
+	<div class="station_mct">
+		<!--左菜单-->
+		<div class="station_left">
+			<div>
+				<a href="trade_overview.html">交易管理简介</a>
+				<a href="#" class="on">运输需求提交</a>
+				<a href="trade_cargo_trace.html">货物追踪</a>
+			</div>
+		</div>
+		<!--左菜单 end-->
+		<div class="station_right">
+			<!--单标题头-->
+			<div class="std_tt01">
+				<div class="search_bar dfr">
+					<input type="text" class="inp_search" placeholder="输入关键字" />
+					<a href="#" class="btn_search"></a>
+				</div>
+				<span>运输需求列表</span>
+				<a href="#" class="cp on">全部</a>
+				<a href="#" class="cp">草稿</a>
+				<a href="#" class="cp">审核中</a>
+			</div>
+			<!--单标题头end-->
+			<table class="table-normal">
+				<thead>
+					<tr>
+						<th>需求单号</th>
+						<th>托运人</th>
+						<th>需求类型</th>
+						<th>提交时间</th>
+						<th>需求状态</th>
+						<th>操作</th>
+					</tr>
+				</thead>
+				<tbody data-json="area3">
+					
+				</tbody> 
+				<!--<tbody>
+					<tr>
+						<td>123482662</td>
+						<td>张三</td>
+						<td>特快货物班列</td>
+						<td>2018.01.09</td>
+						<td>草稿</td>
+						<td>
+							<a href="#" class="btn_30b">查看</a>
+							<a href="#" class="btn_30b">修改</a>
+							<a href="#" class="btn_30g">提交</a>
+							<a href="#" class="btn_30h">删除</a>
+						</td>
+					</tr>
+					<tr>
+						<td>123482662</td>
+						<td>张三</td>
+						<td>整车大宗货物直达</td>
+						<td>2018.01.09</td>
+						<td>审核中</td>
+						<td>
+							<a href="#" class="btn_30b">查看</a>
+							<a href="#" class="btn_30b btn_disabled">修改</a>
+							<a href="#" class="btn_30g btn_disabled">提交</a>
+							<a href="#" class="btn_30h btn_disabled">删除</a>
+						</td>
+					</tr>
+					<tr>
+						<td>123482662</td>
+						<td>张三</td>
+						<td>整车大宗货物直达</td>
+						<td>2018.01.09</td>
+						<td><a href="#" class="cr1">审核未通过<span class="pdl04"><img src="../img/ic_viewdtl.png" /></span></a></td>
+						<td>
+							<a href="#" class="btn_30b">查看</a>
+							<a href="#" class="btn_30b">修改</a>
+							<a href="#" class="btn_30g btn_disabled">提交</a>
+							<a href="#" class="btn_30h">删除</a>
+						</td>
+					</tr>
+				</tbody>-->
+			</table>
+			<!--分页-->
+			<div class="pages">
+				<a href="#">＞|</a>
+				<a href="#">＞</a>
+				<a href="#">10</a>
+				<a href="#">9</a>
+				<span class="pdl06">...</span>
+				<a href="#">4</a>
+				<a href="#">3</a>
+				<a href="#" class="on">2</a>
+				<a href="#">1</a>
+				<a href="#">＜</a>
+				<a href="#">|＜</a>
+				<span><b class="keywd">2</b>/10</span>
+			</div>			
+			<!--分页 end-->
+			<!--单标题头-->
+			<div class="std_tt01 pdt30">				
+				<span>业务办理类型</span>
+			</div>
+			<!--单标题头end-->
+			<div class="pdt20">
+				<a href="#" class="btn_40b">高铁快运</a>
+				<a href="#" class="btn_40b">特快货物班列</a>
+				<a href="#" class="btn_40b">货物快运</a>
+				<a href="#" class="btn_40b">散装对货物</a>
+				<a href="#" class="btn_40b">批量成件货物</a>
+				<a href="#" class="btn_40b">液体货物</a>
+				<a href="#" class="btn_40b">整车大宗货物直达</a>
+				<a href="#" class="btn_40b">集装箱货物</a>
+			</div>
+			
+		</div>
+	</div>
+	
+</div>
+
+</body>
+<script type="text/javascript" charset="utf-8"></script>
+<script src="../js/postData.js"></script>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript">
+	addEventListener("DOMContentLoaded",function () {
+		alert(1);
+		var url = "http://localhost:8080/RIIS-FM/fmTradeOrder/selectTradeOrder";
+		var data = '{"user":{"id":7},"pageModel":{"pageIndex":1,"pageSize":20},"requirement":{}}';
+		postData(url, data, 
+			function(data){
+				var data = JSON.stringify(data);
+				alert(data);
+				var indexPageModel = data.indexOf("pageModel");
+				var indexOrderList = data.indexOf("orderList");
+				var orderList = data.slice(indexOrderList+11, indexPageModel-1).split("},{");
+				var pageModel = data.slice(indexPageModel);
+				alert(orderList);
+				alert(pageModel);
+				alert(orderList[1]);
+				var dom = '';
+				for ( var i = 1; i < orderList.length; i++){
+				var fmTradeOrderInfoBaseEntity = orderList[i].slice(  "fmTradeOrderInfoBaseEntity: {".length, orderList[i].indexOf("},")+1);
+				/*alert(fmTradeOrderInfoBaseEntity);*/
+				var cOrderCode = fmTradeOrderInfoBaseEntity.split(",")[1];
+				var cSenderName = fmTradeOrderInfoBaseEntity.split(",")[9];
+				var iOrderTypeId = fmTradeOrderInfoBaseEntity.split(",")[2];
+				var dOrderCreateTime = fmTradeOrderInfoBaseEntity.split(",")[32];
+				var iOrderState = fmTradeOrderInfoBaseEntity.split(",")[30];
+				/*alert(dOrderCreateTime);*/
+				
+				/*循环加载数据*/
+				
+				dom += '<tr>';
+				dom += '<td>'+cOrderCode.split(":")[1].substring(cOrderCode.split(":")[1].indexOf('"')+1,cOrderCode.split(":")[1].lastIndexOf('"'))+'</td>';
+				dom += '<td>'+cSenderName.split(":")[1].substring(cSenderName.split(":")[1].indexOf('"')+1,cSenderName.split(":")[1].lastIndexOf('"'))+'</td>';
+				dom += '<td>'+iOrderTypeId.split(":")[1]+'</td>';
+				dom += '<td>'+dOrderCreateTime.slice(dOrderCreateTime.indexOf(':"')+1).substring(dOrderCreateTime.slice(dOrderCreateTime.indexOf(':"')+1).indexOf('"')+1,dOrderCreateTime.slice(dOrderCreateTime.indexOf(':"')+1).lastIndexOf('"'))+'</td>';
+				dom += '<td>'+iOrderState.split(":")[1]+'</td>';
+				dom += '<td>'+'<a href="#" class="btn_30b">查看</a>'+
+							'<a href="#" class="btn_30b">修改</a>'+
+							'<a href="#" class="btn_30g btn_disabled">提交</a>'+
+							'<a href="#" class="btn_30h">删除</a>'+
+							'</td>';
+				dom += '</tr>'; 
+				
+				}
+				$('[data-json=area3]').html(dom);   
+				
+				/*$(orderList).each(function (i,item){ 
+					 dom = '';
+					 
+					 alert(item.fmTradeOrderInfoBaseEntity.cOrderCode);
+				
+				})*/
+				
+			});
+		})
+	
+</script>
+</html>

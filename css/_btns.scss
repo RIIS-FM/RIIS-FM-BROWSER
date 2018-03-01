@@ -1,0 +1,25 @@
+.btn_24b{@include btns_gp($cb1,$cw1,24px);}
+.btn_26b{@include btns_gp($cb2,$cw1,26px);}
+.btn_30b{@include btns_gp($cb1,$cw1,30px);margin-right: 5px;}
+.btn_30b2{@include btns_gp($cb1,$cw1,30px);}
+.btn_30g{@include btns_gp($cg1,$cw1,30px);margin-right: 5px;}
+.btn_30h{@include btns_gp($ch3,$cw1,30px);}
+.btn_40b{@include btns_gp($cb1,$cw1,40px);margin-right: 10px;}
+.btn_50b{@include btns_gp($cb1,$cw1,50px);margin-right: 10px;}
+.btn_50g{@include btns_gp($cg1,$cw1,50px);margin-right: 10px;}
+
+.btn_30bw{@include btns_gpw($cb1,$cw1,30px,78px);margin-right: 5px;}
+.btn_30gw{@include btns_gpw($cg1,$cw1,30px,78px);margin-right: 5px;}
+.btn_30hw{@include btns_gpw($ch3,$cw1,30px,78px);margin-right: 5px;}
+.btn_30ow{@include btns_gpw($co1,$cw1,30px,78px);margin-right: 5px;}
+.btn_40bw{@include btns_gpw($cb1,$cw1,40px,100px);margin-left: 10px;}
+.btn_40bw2{@include btns_gpw($cb1,$cw1,40px,180px);margin-left: 10px;}
+.btn_40hw{@include btns_gpw($ch3,$cw1,40px,100px);margin-left: 10px;margin-right: 10px;}
+.btn_40ow{@include btns_gpw($co1,$cw1,40px,100px);margin-right: 5px;}
+.btn_50bw{@include btns_gpw($cb1,$cw1,50px,130px);margin-right: 10px;}
+.btn_50gw{@include btns_gpw($cg1,$cw1,50px,130px);margin-right: 10px;}
+
+.btn_client{display: inline-block;@include bda($cb2);@include bdr(2px);@include txash(center,12px,24px);@include pda(0 10px 0 30px);background: $cw1 url(../img/ic_vip.png) no-repeat left center; color: $cb2;&:hover{color: $cb2;@include bda($cb1);}&.tail{@include pda(0 0 0 30px);}}
+
+.trust_lv{display: inline-block;height: 24px;background-color: $cb2; color: $cw1;padding: 0 10px;}
+.senior_lv{}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../css/grid.css" />
+<title>阶段订单计划</title>
+</head>
+
+<body>
+
+<div class="main_container">	
+	<div class="station_top">
+		<div class="dfr pdt30">			
+			<span class="pdr20 cb2">ABC集团 已登录</span>
+			<a href="#" class="">退出</a>
+		</div>
+		<img src="../img/logo_station.png" />
+	</div>
+	<!--主导航-->
+	<div class="station_nav">
+		<div class="ct">
+			<a href="#">用户中心</a>
+			<a href="#" class="on">大客户管理</a>
+			<a href="#">交易管理</a>
+			<a href="#">统计报表</a>
+			<a href="#">货损理赔</a>
+			<a href="#">客户评价</a>
+		</div>
+	</div>
+	<!--主导航 end-->
+	<div class="station_mct">
+		<!--左菜单-->
+		<div class="station_left">
+			<div>
+				<a href="#">大客户简介</a>
+				<a href="#">大客户信息</a>
+				<a href="#">大客户等级调整</a>
+				<a href="#" class="on">阶段订单计划</a>
+				<a href="#">定制化服务</a>
+			</div>
+		</div>
+		<!--左菜单 end-->
+		<div class="station_right">
+			<!--单标题头-->
+			<div class="std_tt01 pdt05">
+				<span>阶段订单计划</span>
+			</div>
+			<!--单标题头end-->
+			<div class="input_box_std">
+				<dl>
+					<dt>选择经办人</dt>
+					<dd>
+						<a href="#" class="add_btn">+选择发货经办人</a>
+						<a href="#" class="add_btn">+选择收货经办人</a>
+					</dd>
+				</dl>
+				<dl>
+					<dt>运输日期</dt>
+					<dd><input type="date" class="small1" /><span>至&nbsp;&nbsp;</span><input type="date" class="small1" /></dd>
+				</dl>
+				<dl>
+					<dt>发站</dt>
+					<dd><input type="text" /></dd>
+				</dl>
+				<dl>
+					<dt>货物运送周期</dt>
+					<dd><input type="text" /></dd>
+				</dl>
+				<dl>
+					<dt></dt>
+					<dd><a href="#" class="btn_50bw">新增阶段计划</a></dd>
+				</dl>
+			</div>
+			<!--单标题头-->
+			<div class="std_tt01 pdt05">
+				<span>大客户历史信息查询</span>
+			</div>
+			<!--单标题头end-->
+			<div class="clearfix pdb10">
+				<span class="dfl pdt06 txs12 pdr05">查询方式</span>
+				<select class="inp_fliter">
+					<option disabled="disabled" selected="selected" style="display: none;"  >-选择类型-</option>
+					<option>1</option>				
+				</select>
+				<input type="date" class="inp_fliter mgl20" />
+				<span class="pdr10 dfl txs12 pdt07">至</span>
+				<input type="date" class="inp_fliter" />
+			</div>
+			<table class="table-normal">
+				<thead>
+					<tr>
+						<th>需求编号</th>
+						<th>运单编号</th>
+						<th>总车辆数</th>
+						<th>总吨数</th>
+						<th>承运起止时间</th>
+						<th>运费缴纳(元)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>123482662</td>
+						<td>123482662</td>
+						<td>26</td>
+						<td>2018</td>
+						<td>2018.01.07 - 2018.01.12</td>
+						<td><b class="co1">18124.00</b></td>
+					</tr>	
+					<tr>
+						<td>123482662</td>
+						<td>123482662</td>
+						<td>26</td>
+						<td>2018</td>
+						<td>2018.01.07 - 2018.01.12</td>
+						<td><b class="co1">18124.00</b></td>
+					</tr>
+					<tr>
+						<td>123482662</td>
+						<td>123482662</td>
+						<td>26</td>
+						<td>2018</td>
+						<td>2018.01.07 - 2018.01.12</td>
+						<td><b class="co1">18124.00</b></td>
+					</tr>
+					<tr>
+						<td>123482662</td>
+						<td>123482662</td>
+						<td>26</td>
+						<td>2018</td>
+						<td>2018.01.07 - 2018.01.12</td>
+						<td><b class="co1">18124.00</b></td>
+					</tr>
+				</tbody>
+			</table>
+			<!--分页-->
+			<div class="pages">
+				<a href="#">＞|</a>
+				<a href="#">＞</a>
+				<a href="#">10</a>
+				<a href="#">9</a>
+				<span class="pdl06">...</span>
+				<a href="#">4</a>
+				<a href="#">3</a>
+				<a href="#" class="on">2</a>
+				<a href="#">1</a>
+				<a href="#">＜</a>
+				<a href="#">|＜</a>
+				<span><b class="keywd">2</b>/10</span>
+			</div>			
+			<!--分页 end-->
+		</div>
+	</div>
+	
+</div>
+
+</body>
+</html>

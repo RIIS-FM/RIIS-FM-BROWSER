@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../css/grid.css" />
+<title>运输需求提交1</title>
+<script type="text/javascript" charset="utf-8"></script>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript">
+	function aa() {
+		alert(1);
+		$.ajax({
+        type: "POST",  
+        url: "http://localhost:8080/RIIS-FM/fmTradeOrder/insertTradeOrder", 
+        contentType: "application/json",  
+        data: '{"fmTradeOrderInfoBaseEntity":{"iOrderTypeId":3,"dOrderDateline":"2018-01-19 00:00:00","iUserType":3,"iSenderId":7,"iRecverId":5,"cSenderName":"陈八","cSenderAddress":"四川省成都市青羊区","cSenderPhone":"13896321568","cSenderEmail":"941103169@qq.com","cSenderPostcode":"135300","cSenderNote":"轻拿轻放","cSenderCity":"成都","cLoadStation":"成都北站","cLoadLocation":"成都北站货仓","cRecverAddress":"北京市海定区","cRecverPhone":"14789651236","cRecverEmail":"47894562@qq.com","cRecverPostcode":"10000","cRecverCity":"北京","cUnloadStation":"北京站","cUnloadLocation":"北京","cOrderType":"集装箱运输","iOrderSplite":"0","iOrderState":1,"fProtectPrice":100,"fInsuranceValue":100},"fmTradeOrderInfoBoxFreightRecord":{"cGoodsName":"铁合金"},"fmTradeOrderInfoFastFreightRecord":{},"fmTradeOrderInfoWholeVegicleFreightRecord":{}}',  
+        dataType: "json",  
+        success: function (message) {  
+            alert(message);
+        },  
+      
+      });  
+	  alert(2);
+	}
+</script>
+</head>
+
+<body>
+
+<div class="main_container">	
+	<div class="station_top">
+		<div class="dfr pdt30">			
+			<span class="pdr20 cb2">ABC集团 已登录</span>
+			<a href="#" class="">退出</a>
+		</div>
+		<img src="../img/logo_station.png" />
+	</div>
+	<!--主导航-->
+	<div class="station_nav">
+		<div class="ct">
+			<a href="#">用户中心</a>
+			<a href="#">大客户管理</a>
+			<a href="#" class="on">交易管理</a>
+			<a href="#">统计报表</a>
+			<a href="#">货损理赔</a>
+			<a href="#">客户评价</a>
+		</div>
+	</div>
+	<!--主导航 end-->
+	<div class="station_mct">
+		<!--左菜单-->
+		<div class="station_left">
+			<div>
+				<a href="trade_overview.html">交易管理简介</a>
+				<a href="trade_issue_list.html" class="on">运输需求提交</a>
+				<a href="trade_cargo_trace.html">货物追踪</a>
+			</div>
+		</div>
+		<!--左菜单 end-->
+		<div class="station_right">
+			<!--单标题头-->
+			<div class="std_tt01">
+				<span>特快货物班列</span>
+				<a href="#" class="cp on">＜返回列表</a>
+
+			</div>
+			<!--单标题头end-->
+			<div class="input_box_std">
+				<dl>
+					<dt>发送城市</dt>
+					<dd><input type="text" /></dd>
+				</dl>
+				<dl>
+					<dt>到达城市</dt>
+					<dd><input type="text" /></dd>
+				</dl>
+				<dl>
+					<dt>车次</dt>
+					<dd><input type="text" /></dd>
+				</dl>
+				<dl>
+					<dt>装车日期</dt>
+					<dd><input type="text" /></dd>
+				</dl>
+				<dl>
+					<dt>发车日期</dt>
+					<dd><input type="text" /></dd>
+				</dl>
+				<dl>
+					<dt>装车站</dt>
+					<dd><input type="text" class="small1" /><input type="text" class="big1" placeholder="车站详细地址" /></dd>
+				</dl>
+				<dl>
+					<dt>卸车站</dt>
+					<dd><input type="text" class="small1" /><input type="text" class="big1" placeholder="车站详细地址" /></dd>
+				</dl>
+				<dl>
+					<dt>期望到达日期</dt>
+					<dd><input type="date" /></dd>
+				</dl>
+				<dl>
+					<dt>选择经办人</dt>
+					<dd>
+						<a href="#" class="add_btn">+选择发货经办人</a>
+						<a href="#" class="add_btn">+选择收货经办人</a>
+					</dd>
+				</dl>
+				<dl>
+					<dt>货物名称</dt>
+					<dd><input type="text" /></dd>
+				</dl>
+				<dl>
+					<dt>总重量</dt>
+					<dd><input type="text" /><span>吨</span></dd>
+				</dl>
+				<dl>
+					<dt>货物件数</dt>
+					<dd><input type="text" /><span>件</span></dd>
+				</dl>
+				<dl>
+					<dt>单件最大重量</dt>
+					<dd><input type="text" /><span>吨</span></dd>
+				</dl>
+				<dl>
+					<dt>剩余可订车数</dt>
+					<dd><input type="text" readonly="readonly" value="20" /></dd>
+				</dl>
+				<dl>
+					<dt>物流服务</dt>
+					<dd>
+						<label>
+							<input type="checkbox" />
+							<span>门到站</span>
+						</label>
+						<label>
+							<input type="checkbox" />
+							<span>站到门</span>
+						</label>
+					</dd>
+				</dl>
+				<dl>
+					<dt></dt>
+					<dd>
+						<a href="#" class="btn_50g" onclick="aa()">提交</a>
+						<a href="#" class="btn_50b">保存</a>
+						<a href="#" class="btn_resetform">清空</a>
+					</dd>
+				</dl>
+			</div>
+			
+			
+		</div>
+	</div>
+	
+</div>
+
+</body>
+</html>

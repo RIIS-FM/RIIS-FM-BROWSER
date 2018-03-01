@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../css/grid.css" />
+<title>赔偿要求书提交</title>
+</head>
+
+<body>
+
+<div class="main_container">	
+	<div class="station_top">
+		<div class="dfr pdt30">			
+			<span class="pdr20 cb2">ABC集团 已登录</span>
+			<a href="#" class="">退出</a>
+		</div>
+		<img src="../img/logo_station.png" />
+	</div>
+	<!--主导航-->
+	<div class="station_nav">
+		<div class="ct">
+			<a href="#">用户中心</a>
+			<a href="#">大客户管理</a>
+			<a href="#">交易管理</a>
+			<a href="#">统计报表</a>
+			<a href="#" class="on">货损理赔</a>
+			<a href="#">客户评价</a>
+		</div>
+	</div>
+	<!--主导航 end-->
+	<div class="station_mct">
+		<!--左菜单-->
+		<div class="station_left">
+			<div>
+				<a href="#">提赔历史记录</a>
+				<a href="#" class="on">赔偿要求书提交</a>
+			</div>
+		</div>
+		<!--左菜单 end-->
+		<div class="station_right">			
+			<!--单标题头-->
+			<div class="std_tt01 pdt05">
+				<span>赔偿要求书</span>
+				<a href="#" class="btn_backward">&lt;返回列表</a>
+			</div>
+			<!--单标题头end-->
+			<div class="clearfix">
+				<div class="input_box_s1">
+					<dl>
+						<dt>发站</dt>
+						<dd><input type="text" /></dd>
+					</dl>
+					<dl>
+						<dt>到站</dt>
+						<dd><input type="text" /></dd>
+					</dl>
+					<dl>
+						<dt>品名</dt>
+						<dd><input type="text" /></dd>
+					</dl>
+					<dl>
+						<dt>要求赔偿金额</dt>
+						<dd><input type="text" /></dd>
+					</dl>
+				</div>
+				<div class="input_box_s1">
+					<dl>
+						<dt>运单号</dt>
+						<dd><input type="text" /></dd>
+					</dl>
+					<dl>
+						<dt>提赔人</dt>
+						<dd><input type="text" /></dd>
+					</dl>
+					<dl>
+						<dt>货物损失数量</dt>
+						<dd><input type="text" /></dd>
+					</dl>
+					<dl>
+						<dt>领款方式</dt>
+						<dd>
+							<label>
+								<input type="radio" />
+								<span>银行支付</span>
+							</label>
+							<label>
+								<input type="radio" />
+								<span>车站领取现金</span>
+							</label>
+						</dd>
+					</dl>
+				</div>
+			</div>
+			<div class="input_box_s2">				
+				<dl>
+					<dt>详细通讯地址</dt>
+					<dd><input type="text" class="big2" /></dd>
+				</dl>
+				<dl>
+					<dt>收款人</dt>
+					<dd><input type="text" /></dd>
+				</dl>
+				<dl>
+					<dt>收款银行</dt>
+					<dd><input type="text" /></dd>
+				</dl>
+				<dl>
+					<dt>收款账号</dt>
+					<dd><input type="text" /></dd>
+				</dl>
+				<dl>
+					<dt>定损号</dt>
+					<dd><input type="text" /></dd>
+				</dl>
+				<dl>
+					<dt></dt>
+					<dd>
+						<a href="#" class="btn_50gw">提交</a>
+						<a href="#" class="btn_50bw">保存</a>
+						<a href="#" class="btn_50bw">打印</a>
+					</dd>
+				</dl>
+			</div>
+			
+			<!--单标题头-->
+			<div class="std_tt01 pdt15">
+				<div class="search_bar dfr">
+					<input type="text" class="inp_search" placeholder="输入运单号查询" />
+					<a href="#" class="btn_search"></a>
+				</div>
+				<span>赔偿要求书查看</span>
+			</div>
+			<!--单标题头end-->			
+			<table class="table-normal">
+				<thead>
+					<tr>
+						<th>运单编号</th>
+						<th>提赔人</th>
+						<th>索赔金额(元)</th>
+						<th>提赔日期</th>
+						<th width="200">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>123482662</td>
+						<td>张三</td>
+						<td><b class="co1">124524.00</b></td>
+						<td>-</td><!--没提交的就没有日期-->
+						<td>
+							<a href="#" class="btn_30b">修改</a>
+							<a href="#" class="btn_30g">提交</a>
+							<a href="#" class="btn_30h">删除</a>
+						</td>
+					</tr>	
+					<tr>
+						<td>123482662</td>
+						<td>张三</td>
+						<td><b class="co1">124524.00</b></td>
+						<td>2018.01.09</td>
+						<td>
+							<a href="#" class="btn_30b btn_disabled">修改</a>
+							<a href="#" class="btn_30g btn_disabled">提交</a>
+							<a href="#" class="btn_30h btn_disabled">删除</a>
+						</td>
+					</tr>
+					<tr>
+						<td>123482662</td>
+						<td>张三</td>
+						<td><b class="co1">124524.00</b></td>
+						<td>-</td>
+						<td>
+							<a href="#" class="btn_30b">修改</a>
+							<a href="#" class="btn_30g">提交</a>
+							<a href="#" class="btn_30h">删除</a>
+						</td>
+					</tr>	
+					<tr>
+						<td>123482662</td>
+						<td>张三</td>
+						<td><b class="co1">124524.00</b></td>
+						<td>2018.01.09</td>
+						<td>
+							<a href="#" class="btn_30b btn_disabled">修改</a>
+							<a href="#" class="btn_30g btn_disabled">提交</a>
+							<a href="#" class="btn_30h btn_disabled">删除</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<!--分页-->
+			<div class="pages">
+				<a href="#">＞|</a>
+				<a href="#">＞</a>
+				<a href="#">10</a>
+				<a href="#">9</a>
+				<span class="pdl06">...</span>
+				<a href="#">4</a>
+				<a href="#">3</a>
+				<a href="#" class="on">2</a>
+				<a href="#">1</a>
+				<a href="#">＜</a>
+				<a href="#">|＜</a>
+				<span><b class="keywd">2</b>/10</span>
+			</div>			
+			<!--分页 end-->
+			
+		</div>
+	</div>
+	
+</div>
+
+</body>
+</html>

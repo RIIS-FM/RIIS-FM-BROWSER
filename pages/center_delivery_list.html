@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../css/grid.css" />
+<title>我的运单</title>
+</head>
+
+<body>
+<!--pop通用弹窗-->
+	<div class="pop_container">
+		<div class="pop_std">
+			<div class="tt"><a href="#"></a>运单详情</div>				
+			<div class="delivery_tip">	
+				<div class="clearfix">
+					<div class="dfr">运单编号：1231456458</div>
+					<p class="txs16 clearfix"><b class="stn">成都西站</b><span class="train_arr">K1232</span><b class="stn">昆明西站</b></p>
+					<p class="pdt10">装车日期：2018.01.09</p>					
+				</div>		
+				<div class="clearfix pdt20">
+					<div class="operator_infos">
+						<p class="txs18 ch1"><b>中国通号设计研究院集团有限公司成都分公司</b>&nbsp;<b class="txs16 ch3">(托运人)</b></p>
+						<p class="ch1 txs14"><b>张三&nbsp;13823564598</b></p>
+						<p class="pdt05">地址：成都市青羊区日月大道299号青羊工业基地N区33栋成都市青羊区日月大道299号青羊工业基地</p>
+						<p>邮编：610000</p>
+						<p>邮箱：zhangyuanwai@crsc.com</p>
+					</div>
+					<div class="operator_infos">
+						<p class="txs18 ch1"><b>中国铁路总公司工程管理中心</b>&nbsp;<b class="txs16 ch3">(收货人)</b></p>
+						<p class="ch1 txs14"><b>张三&nbsp;13823564598</b></p>
+						<p class="pdt05">地址：成都市青羊区日月大道299号青羊工业基地N区33栋</p>
+						<p>邮编：610000</p>
+						<p>邮箱：zhangyuanwai@crsc.com</p>
+					</div>
+				</div>
+				<div class="pdt10 txs16">
+					<p>货物信息：<b class="pdr20">煤矿</b><b class="pdr20">25吨</b><b class="pdr20">散装</b></p>
+				</div>
+				<div class="pdt10 txar">
+					<a href="#" class="btn_40bw">打印</a>
+					<a href="#" class="btn_40hw">返回</a>
+				</div>
+			</div>				
+		</div>
+		<div class="pop_windows"></div>
+	</div>
+<!--pop通用弹窗 end-->
+
+<div class="main_container">	
+	<div class="station_top">
+		<div class="dfr pdt30">			
+			<span class="pdr20 cb2">ABC集团 已登录</span>
+			<a href="#" class="">退出</a>
+		</div>
+		<img src="../img/logo_station.png" />
+	</div>
+	<!--主导航-->
+	<div class="station_nav">
+		<div class="ct">
+			<a href="#" class="on">用户中心</a>
+			<a href="#">大客户管理</a>
+			<a href="#">交易管理</a>
+			<a href="#">统计报表</a>
+			<a href="#">货损理赔</a>
+			<a href="#">客户评价</a>
+		</div>
+	</div>
+	<!--主导航 end-->
+	<div class="station_mct">
+		<!--左菜单-->
+		<div class="station_left">
+			<div>
+				<a href="#">总览</a>
+				<a href="#">常用联系人</a>
+				<a href="#">我的订单</a>
+				<a href="#" class="on">我的运单</a>
+				<a href="#">大客户申请</a>
+			</div>
+		</div>
+		<!--左菜单 end-->
+		<div class="station_right">
+			<!--单标题头-->
+			<div class="std_tt02">	
+				<div class="search_bar dfr">
+					<input type="text" class="inp_search" placeholder="输入关键字" />
+					<a href="#" class="btn_search"></a>
+				</div>
+				<span>我的订单</span>
+				<a href="#" class="cp on">全部</a>
+				<a href="#" class="cp">待发货</a>
+				<a href="#" class="cp">待收货</a>
+				<a href="#" class="cp">已完成</a>
+			</div>
+			<!--单标题头end-->
+			<table class="table-normal">
+				<thead>
+					<tr>
+						<th>需求单号</th>
+						<th>运单编号</th>
+						<th>需求类型</th>
+						<th>运单状态</th>
+						<th>运费(元)</th>
+						<th width="200">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>123482662</td>
+						<td>123482662</td>
+						<td>特快货物班列</td>
+						<td>待发货</td>
+						<td><b class="co1">1980.00</b></td>
+						<td class="txal">
+							<a href="#" class="btn_30bw">查看详情</a>
+						</td>
+					</tr>
+					<tr>
+						<td>123482662</td>
+						<td>123482662</td>
+						<td>特快货物班列</td>
+						<td>待收货</td>
+						<td><b class="co1">1980.00</b></td>
+						<td class="txal">
+							<a href="#" class="btn_30bw">货物追踪</a>
+							<a href="#" class="btn_30bw">查看详情</a>
+						</td>
+					</tr>
+					<tr>
+						<td>123482662</td>
+						<td>123482662</td>
+						<td>特快货物班列</td>
+						<td><span class="cg1">已完成</span></td>
+						<td><b class="co1">1980.00</b></td>
+						<td class="txal">
+							<a href="#" class="btn_30bw">查看详情</a>
+						</td>
+					</tr>
+					<tr>
+						<td>123482662</td>
+						<td>123482662</td>
+						<td>特快货物班列</td>
+						<td>待发货</td>
+						<td><b class="co1">1980.00</b></td>
+						<td class="txal">
+							<a href="#" class="btn_30bw">查看详情</a>
+						</td>
+					</tr>
+					<tr>
+						<td>123482662</td>
+						<td>123482662</td>
+						<td>特快货物班列</td>
+						<td>待收货</td>
+						<td><b class="co1">1980.00</b></td>
+						<td class="txal">
+							<a href="#" class="btn_30bw">货物追踪</a>
+							<a href="#" class="btn_30bw">查看详情</a>
+						</td>
+					</tr>
+					<tr>
+						<td>123482662</td>
+						<td>123482662</td>
+						<td>特快货物班列</td>
+						<td><span class="cg1">已完成</span></td>
+						<td><b class="co1">1980.00</b></td>
+						<td class="txal">
+							<a href="#" class="btn_30bw">查看详情</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<!--分页-->
+			<div class="pages">
+				<a href="#">＞|</a>
+				<a href="#">＞</a>
+				<a href="#">10</a>
+				<a href="#">9</a>
+				<span class="pdl06">...</span>
+				<a href="#">4</a>
+				<a href="#">3</a>
+				<a href="#" class="on">2</a>
+				<a href="#">1</a>
+				<a href="#">＜</a>
+				<a href="#">|＜</a>
+				<span><b class="keywd">2</b>/10</span>
+			</div>			
+			<!--分页 end-->			
+			
+		</div>
+	</div>
+	
+</div>
+
+</body>
+</html>

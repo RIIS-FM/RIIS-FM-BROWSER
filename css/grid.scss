@@ -1,0 +1,442 @@
+@import "var";
+@import "mix";
+@import "btns";
+
+.bt_r1{font-weight:bold;&:before{color: $cr1;content: "* ";}}
+.search_bar{position: relative;width: 200px;}
+.inp_search{@include input_txt_std(200px,30px); margin-right: 0; padding-right: 30px;}
+.inp_sg01{@include input_txt_std(100px,30px);margin-right: 300px;}
+.inp_fliter{@include input_txt_std(160px,30px); margin-right: 10px; float: left;}
+.label_form1{@include label_form(12px,80px);float: left;}
+.label_form2{@include label_form(12px,190px);label input{@include mga(20px 5px 0 0);}}
+.label_form3{@include label_form(12px,160px);label input{@include mga(10px 5px 0 0);}}
+.chapter_txt1{
+    padding-top: 20px;
+    width: 1015px;
+    p{text-indent: 2em;padding-bottom: 10px;@include txash(justify,14px,1.8);}
+}
+
+.btn_search{ width: 30px; height: 30px; background: url(../img/ic_search.png) no-repeat center center;position: absolute;z-index: 2;top:0;right: 0;}
+.station_top{
+    @include ctr_wrap(1240px);
+    height: 80px;
+    img{margin-top: 20px;}
+}
+.station_nav{
+    width: 100%; height:40px;background-color: $cb1;
+    .ct{@include ctr_wrap(1240px);}
+    a{
+        display: inline-block;@include pda(0 30px);color: $cw1;@include txsh(16px,40px);
+        &:hover,&.on{background-color: $cb2;}
+    }
+}
+.station_mct{
+    @include ctr_wrap(1240px);
+    @extend .clearfix;
+}
+.station_left{
+    float: left;
+    width: 185px;
+    @include txsh(16px,40px);
+    margin-top: 20px;
+        a{
+            width: 185px;
+            display: inline-block;
+            color:$ch3; 
+            &:before{content: "· ";}
+            &:hover,&.on{color: $ch2;font-weight: bold;}
+
+        }   
+}
+.station_right{
+    width: 1050px;
+    float: right;
+}
+.main_container{width:100%;height:100%;}
+.top_nav{
+    width: 100%;height: 90px; background-color: $cb1;position: $fix;z-index: 2;
+    .logo{@include pda(20px 0 0 30px);float: left;}
+    .main_nav{
+        float: left;
+        @include pda(17px 0 0 80px);
+        @extend .clearfix;
+        .cp{
+            float: left;
+            color: $cw1;
+            opacity: .7;
+            width: 70px;
+            @include mgs(right,50px);
+            @extend .pointer;
+            p{@include txash(center,16px,1.5);}
+            span{
+                width: 30px;height: 30px;display: inline-block;
+                background: url(../img/ic_nav.png);
+            }     
+            .cp1{background-position: 0 0;}
+            .cp2{background-position: -30px 0;}
+            .cp3{background-position: -60px 0;}
+            .cp4{background-position: -90px 0;}
+            .cp5{background-position: -120px 0;}
+            .cp6{background-position: -150px 0;}
+            &:hover{
+                opacity: 1;
+            }
+        }
+        .cp.on{
+            opacity: 1;
+            &:hover{opacity: 1;}
+        }
+        
+    }
+}
+
+
+.left_menu{
+    width: 200px;height:100%;top:90px;left:0;position: $fix; z-index: 1;@include bds(right,$ch5);
+    a{
+        background-color: $cw1;
+        width: 100%;display: inline-block;
+        color: $ch2;
+        @include txsh(14px,48px);
+        @include pds(left,20px);        
+        span{ width: 4px; height: 4px;display:inline-block;background-color: $ch5; float: left;@include txsh(1px,1px); @include bdr(2px);@include mga(22px 10px 0 0)}
+        &:hover{
+            background-color: #f6f6f6;
+            }
+    }
+    a.on{
+            background-color: #f0f0f0;
+    }
+}
+.right_main{width:100%;height: 100%;@include pda(90px 0 0 200px); position: $ret;}
+.right_container{width: 100%; height: 100%; @include pda(10px 20px 30px 20px);overflow: scroll;}
+
+.std_tt01{
+    position: $ret;
+    @include mgs(top,20px);
+    height: 50px;
+    span{
+        float: left;
+        color: $ch2;
+        @include txsh(16px,16px);
+        @include bds(left,$cb1,2px);        
+        @include pda(0 30px 0 10px);
+        @include mgs(top,4px);
+    }
+    a.cp{margin-right: 15px;display: inline-block;@include txsh(12px,23px)}
+    a.cp.on{@include btns_gp($cb1,$cw1,24px);}
+}
+.std_tt02{
+    position: $ret;
+    @include mgs(top,20px);
+    height: 36px;
+    span{
+        float: left;
+        color: $ch2;
+        @include txsh(16px,16px);
+        @include bds(left,$cb1,2px);        
+        @include pda(0 30px 0 10px);
+        @include mgs(top,4px);
+    }
+    a.cp{margin-right: 15px;display: inline-block;@include txsh(12px,23px)}
+    a.cp.on{@include btns_gp($cb1,$cw1,24px);}
+}
+
+.input_box_std{
+    @include input_box_s(90px,900px,240px);
+}
+
+.table-normal{ 
+    width: 100%; @include mgs(bottom,20px);
+    @include txash(center,14px,2);
+    @include bda();
+    td,th{  border-collapse: collapse; @include pda(5px 10px); }
+    td{@include bda();}
+    thead{
+          th{background-color: $ch7; color: $ch3;font-weight: normal;}         
+    }
+    tbody{
+        
+        tr:hover{
+            td{background-color: $ch7;}
+        }        
+    }
+}
+
+.table-normal2{ 
+    width: 100%; @include mgs(bottom,20px);
+    @include txash(center,14px,1.5);
+    td,th{  border-collapse: collapse;@include bda(); @include pda(5px 10px); }
+    thead{
+          th{background-color: $ch7; color: $ch3;font-weight: normal;}         
+    }
+
+}
+
+.table-normal3{@extend .table-normal;@include txash(center,14px,1.5);}
+.float_btn{
+    float: left;
+    height: 40px;
+    background-color: $cb1;
+    color: $cw1;
+    @include mgs(left,-12px);    
+    @include bdr(1px);
+    @include pda(0 10px);
+    @include txsh(14px,38px);
+    &:hover{background-color:darken($cb1,10%);color: $cw1;}    
+}
+
+
+.btn_nextto_inp{@include btns_gp($cg1,$cw1,30px)}
+.btn_backward{
+    float: left;
+    @include btns_gp($cb1,$cw1,24px,btn_backward);
+}
+
+.btn_commit{@include btns_gp($cb1,$cw1,50px,btn_commit);}
+
+.login_info{
+    float: right;
+    @include txs(14px);
+    @include pda(30px 20px 0 0);
+    color: $cw1;
+    a{
+        color: $cw1;display: inline-block;@include pds(left,10px);
+        &:hover{color: $ch6;}
+    }
+}
+
+
+.btn_disabled{
+    background-color: #ccc;
+    &:hover{background-color: #ccc !important;}
+}
+.btn_edit_booked{
+    @include btns_gp($ch3,$cw1,24px,btn_24h);position: $abs;z-index: 2;right:0;top: 5px;cursor: pointer;
+    .sch_date_list{display: none;
+        position: $abs;margin-left: 54px;margin-top:0;background-color: darken($ch3,10%); @include bdr(2px);width: 50px;@include pda(2px);z-index: 2;
+        a{
+            display: block;
+            @include txsh(12px,1.5);color: $ch6;
+            &:hover{color: $cw1; background-color: $ch4;}
+        }
+    }
+    &:hover .sch_date_list{display: block;}
+}
+
+
+.pages{
+    @include mga(20px 0);
+    .keywd{color: $cb1;font-weight: bold;}
+    @extend .clearfix;
+    span,a{float: right;}
+    span{@include mga(0 5px);@include txsh(12px,30px);}
+    a{
+        width: 32px;height: 30px; @include bda($ch5);@include txash(center,12px,28px);@include mgs(left,6px);
+        &:hover{color: $cw1;@include bda($cb1);background-color: $cb1;}
+    }
+    a.on{color: $cw1;@include bda($cb1);background-color: $cb1;}
+}
+.pop_container{width: 100%; height: 100%; position: fixed;left: 0; top: 0;z-index: 5000;}
+.pop_windows{width: 100%; height: 100%; background: $ch1; opacity:.5;position:$abs; z-index: 201;left:0;top:0;}
+.pop_std{
+    position:$abs;left:20%; top: 20%;z-index: 203;background:$cw1;
+    .tt{
+        background: $ch7;@include pda(10px 10px 10px 20px);@include txsh(14px,24px);
+        a{width: 24px; height: 24px; float:right;background: url(../img/ic_close_window.png) no-repeat;}
+    }
+}
+.pop_tab1_ct{width: 710px;max-height: 460px; padding: 10px; overflow-x: hidden;overflow-y: scroll;}
+.pop_tab1{ 
+    width:670px; 
+    
+    td,th{border-collapse: collapse; @include pda(10px 10px);@include bds(bottom);@include txash(center,14px,1.5); }
+    thead{
+          th{color: $ch3;font-weight: normal;}         
+    }
+    tbody{
+        
+        tr:hover{
+            td{background-color: $ch7;}
+        }        
+    }
+}
+
+.pop_tab2_ct{width: 800px;max-height: 460px; padding: 10px; overflow-x: hidden;overflow-y: scroll;}
+.pop_tab2{ 
+    width:750px; 
+    
+    td,th{border-collapse: collapse; @include pda(10px 10px);@include bds(bottom);@include txash(center,14px,1.5); }
+    thead{
+          th{color: $ch3;font-weight: normal;}         
+    }
+    tbody{
+        
+        tr:hover{
+            td{background-color: $ch7;}
+        }        
+    }
+}
+.pop_ct1{width: 500px;height: 160px; padding: 10px;}
+.sep_tt{line-height: 40px;@include bds(bottom);}
+.pop_tab3_ct{width: 640px;max-height: 270px; padding: 10px; overflow-x: hidden;overflow-y: scroll;}
+.pop_tab3{ 
+    width:590px; 
+    
+    td,th{border-collapse: collapse; @include pda(10px 10px);@include bds(bottom);@include txash(center,14px,1.5); }
+    thead{
+          th{color: $ch3;font-weight: normal;}         
+    }
+    tbody{
+        
+        tr:hover{
+            td{background-color: $ch7;}
+        }        
+    }
+}
+.pop_tab4_ct{width: 480px; padding: 10px;}
+.pop_tab4{ 
+    width:460px; 
+    
+    td,th{border-collapse: collapse; @include pda(5px);@include txash(center,14px,1.5); }
+    thead{
+          th{color: $ch3;font-weight: normal;}         
+    }
+    tbody{
+        
+        tr:hover,tr.on{
+            td{background-color: $ch6;}
+        }        
+        tr.on{font-weight: bold;}
+    }
+}
+.pop_inpbox_ct1{width: 360px;height: 400px;padding: 20px;}
+.pop_inpbox1{@include input_box_s(40px,250px,260px);}
+.loading{position: fixed;z-index: 20001; width: 100%;height: 100%;left: 0;top: 0;}
+.pop_loadingbg {width: 100%;
+  height: 100%;
+  background: $ch2;
+  opacity: .5;
+  position: absolute;
+  z-index: 20002;
+  left: 0;
+  top: 0;
+}
+.sc_loader{
+    width: 120px;
+    height: 50px; 
+    background-color: $cw1;
+    @include bdr(3px);
+    @extend .clearfix;
+    color: $ch4; 
+    @include txs(14px); 
+    position: absolute;
+    z-index: 20003;
+    left:50%;top:50%;
+    margin-left: -60px;
+    margin-top: -30px;
+    padding:15px 10px;
+}
+
+
+
+.add_btn{@include bda($ch4,3px,dashed);padding: 20px 30px;@include txash(center,16px,1);color: $ch4; margin-right: 10px;}
+.btn_resetform{@include btns_gp($cw1,$ch4,50px);@include bda($cw1);}
+
+.operator_infos{
+    width:370px;height: 210px;
+    position: relative;@include bda();@include pda(15px 25px);line-height: 1.5; font-size: 12px; color: $ch3;float: left;margin-right: 10px;
+    p{padding-bottom: 5px;}
+    .switch_op{@include btns_gp($cb1,$cw1,24px); position: absolute; bottom: 10px; right: 10px;}
+}
+.operator_infos2{@extend .operator_infos;height: 120px;}
+.delivery_tip{
+    width: 800px;height: 420px; padding: 20px;
+    b.stn{ float: left;}
+}
+.delivery_tip2{@extend .delivery_tip;height: 290px;}
+.train_arr{float: left;width:60px;height: 20px;@include txash(center,12px,1); font-weight: bold; background: url(../img/train_dr.png) no-repeat bottom;@include pda(0 5px);  }
+
+.payments{width:640px;height: 380px; padding: 20px;}
+
+.user_infos{}
+
+.totals_numbers{
+
+    @extend .clearfix;
+    .cp{
+        padding-right: 30px;@include bds(right);@include mgs(right,30px);float: left;
+        p{font-weight: bold;font-size: 18px; color:$co1;}
+        div{font-size: 14px;color: $ch3;}
+        &.last{border: 0;}
+    }
+}
+
+.input_box_txt1{@include input_box_txt(100px,920px);}
+.input_box_txt2{@include input_box_txt(100px,300px); float: left;}
+.input_box_txt3{@include input_box_txt(120px,200px); float: left; dl dt{@include txash(right,14px,32px);}}
+.input_box_txt4{@include input_box_txt(140px,160px); float: left; dl dt{@include txash(right,14px,32px);}}
+.cut_line1{@include bds(bottom);width: 800px;}
+.input_box_s1{@include input_box_s(100px,300px,220px); float: left;}
+.input_box_s2{@include input_box_s(100px,900px,220px);dl dd input.big2{width: 624px;}}
+.input_box_s3{@include input_box_s(180px,800px,220px);}
+
+.apply_content{
+                width:750px;
+                height: 160px;
+                resize: none;
+                @include bda($ch5);
+                @include bdr(2px);
+                @include pda(7px);                
+                @include txsh(14px,1.5);
+                @include mga(10px 0);
+                &:hover,&:focus{@include bda($ch3);}
+}
+.evaluate_content{
+                width:550px;
+                height: 175px;
+                resize: none;
+                @include bda($ch5);
+                @include bdr(2px);
+                @include pda(7px);                
+                @include txsh(14px,1.5);
+                @include mga(15px 0);
+                &:hover,&:focus{@include bda($ch3);}
+}
+.evaluate_content_pop{
+                width:300px;
+                height: 140px;
+                resize: none;
+                @include bda($ch5);
+                @include bdr(2px);
+                @include pda(7px);                
+                @include txsh(14px,1.5);
+                @include mga(10px 20px 15px 0);
+                &:hover,&:focus{@include bda($ch3);}
+}
+
+.notices{width: 800px;min-height: 300px;@include bda();}
+.trace_map{
+    width: 900px;@include bda();@extend .clearfix;margin-top: 20px;
+    .map_sdk{width: 550px;height: 350px;@include bds(right);float: left;}
+    .trace_detail{width: 340px; height:350px; overflow-x: hidden;overflow-y: scroll;float: right; @include pda(15px 0 15px 10px);}
+    .cp{        
+        width: 280px;
+        padding-bottom: 15px;
+        p{@extend .clearfix;}
+        span{width: 8px;height: 8px;@include bdr(50%);background-color: $ch5;float: left;margin-right: 4px;margin-top: 6px;}
+        b{font-weight: normal;color: $ch4;float: left;}
+        i{font-style: normal;color: $ch3;float: left;padding-left: 12px;}
+    }
+    .cp.last{
+        span{background-color: $cb2;}
+        b{font-weight: bold;color: $ch1;}
+        i{font-weight: bold;color: $ch1;}
+    }
+}
+
+.stars{
+    width:20px;height: 19px;background: url(../img/ic_star.png) no-repeat center center; display: inline-block;padding-right: 2px;margin-top:4px;
+    &:hover,&.on{background-image: url(../img/ic_star_on.png);}
+}
+.ev_ct{p{padding-bottom: 10px;}a,span{margin-left: 10px;}}
