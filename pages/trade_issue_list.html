@@ -8,16 +8,16 @@
 
 <body>
 <!--pop通用弹窗-->		
-	<!--<div class="pop_container">
+	<div id="pop" class="pop_container" style="display: none;">
 		<div class="pop_std">
-			<div class="tt"><a href="#"></a>审核未通过详情</div>				
+			<div class="tt"><a href="#" onclick="showPop()"></a>审核未通过详情</div>				
 			<div class="pop_ct1">	
 				<div class="sep_tt">审核日期：2018.01.09</div>
 				<div class="pdt10">审核未通过原因：<span class="cr1 pdl10">货运高峰期，列车档期已满，建议往后顺延或选择其他运输方式</span></div>					
 			</div>				
 		</div>
 		<div class="pop_windows"></div>		
-	</div>-->
+	</div>
 <!--pop通用弹窗 end-->
 
 
@@ -78,47 +78,6 @@
 				<tbody data-json="orderData">
 					
 				</tbody> 
-				<tbody>
-					<tr>
-						<td>123482662</td>
-						<td>张三</td>
-						<td>特快货物班列</td>
-						<td>2018.01.09</td>
-						<td>草稿</td>
-						<td>
-							<a href="#" class="btn_30b">查看</a>
-							<a href="#" class="btn_30b">修改</a>
-							<a href="#" class="btn_30g">提交</a>
-							<a href="#" class="btn_30h">删除</a>
-						</td>
-					</tr>
-					<tr>
-						<td>123482662</td>
-						<td>张三</td>
-						<td>整车大宗货物直达</td>
-						<td>2018.01.09</td>
-						<td>审核中</td>
-						<td>
-							<a href="#" class="btn_30b">查看</a>
-							<a href="#" class="btn_30b btn_disabled">修改</a>
-							<a href="#" class="btn_30g btn_disabled">提交</a>
-							<a href="#" class="btn_30h btn_disabled">删除</a>
-						</td>
-					</tr>
-					<tr>
-						<td>123482662</td>
-						<td>张三</td>
-						<td>整车大宗货物直达</td>
-						<td>2018.01.09</td>
-						<td><a href="#" class="cr1">审核未通过<span class="pdl04"><img src="../img/ic_viewdtl.png" /></span></a></td>
-						<td>
-							<a href="#" class="btn_30b">查看</a>
-							<a href="#" class="btn_30b">修改</a>
-							<a href="#" class="btn_30g btn_disabled">提交</a>
-							<a href="#" class="btn_30h">删除</a>
-						</td>
-					</tr>
-				</tbody>
 			</table>
 			<!--分页-->
 			<div class="pages">
@@ -160,6 +119,7 @@
 </body>
 <script type="text/javascript" charset="utf-8"></script>
 <script src="../js/util.js"></script>
+<script src="../js/trade_issue_list.js"></script>
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script type="text/javascript">
 	addEventListener("DOMContentLoaded",function () {
@@ -178,12 +138,17 @@
 					dom += '<td>'+orderList[i].fmTradeOrderInfoBaseEntity.cSenderName.toString()+'</td>';
 					dom += '<td>'+orderType(orderList[i].fmTradeOrderInfoBaseEntity.iOrderTypeId)+'</td>';
 					dom += '<td>'+orderList[i].fmTradeOrderInfoBaseEntity.dOrderCreateTime.toString()+'</td>';
-					dom += '<td>'+orderState(orderList[i].fmTradeOrderInfoBaseEntity.iOrderState)+'</td>';
-					dom += '<td>'+'<a href="#" class="btn_30b">查看</a>'+
-								'<a href="#" class="btn_30b">修改</a>'+
-								'<a href="#" class="btn_30g btn_disabled">提交</a>'+
-								'<a href="#" class="btn_30h">删除</a>'+
-								'</td>';
+					if (orderList[i].fmTradeOrderInfoBaseEntity.iOrderState === 3){
+						dom += '<td>'+
+						'<a href="#" onclick="showPop()" class="cr1">'+
+						orderState(orderList[i].fmTradeOrderInfoBaseEntity.iOrderState)+
+						'<span class="pdl04"><img src="../img/ic_viewdtl.png" /></span></a>'+
+						'</td>'
+					}else{
+						dom += '<td>'+orderState(orderList[i].fmTradeOrderInfoBaseEntity.iOrderState)+'</td>';
+					}
+								
+					dom += btnSty(orderList[i].fmTradeOrderInfoBaseEntity.iOrderState, orderList[i].fmTradeOrderInfoBaseEntity.iOrderTypeId);
 					dom += '</tr>'; 
 				
 				}

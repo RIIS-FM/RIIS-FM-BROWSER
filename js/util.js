@@ -95,7 +95,7 @@ function orderState(value){
 			ret = "确认承运方案";
 			break;
 		case 3:
-			ret = "已审核未通过";
+			ret = "审核未通过";
 			break;
 		case 4:
 			ret = "待付款";
@@ -148,4 +148,15 @@ function waybillState(value){
 			break;
 	}
 	return ret;
+}
+
+/**
+ * 显示隐藏弹出框
+ **/
+function showPop(){
+	if ($("#pop").attr("style") == "display: none;"){
+		$("#pop").attr("style","display:;");
+	} else {
+		$("#pop").attr("style","display: none;");
+	}
 }
