@@ -118,3 +118,34 @@ function orderState(value){
 	}
 	return ret;
 }
+
+/**
+	* 运单状态转换
+	* @example constValue(1);
+	* @param {vaule} 常量值
+	* @return 常量值对应的含义
+*/
+function waybillState(value){
+	var ret;
+	switch (value){
+		case 0:
+			ret = "待发货";
+			break;
+		case 1:
+			ret = "待收货";
+			break;
+		case 2:
+			ret = "待评价";
+			break;
+		case 3:
+			ret = "已完成";
+			break;
+		case 4:
+			ret = "已取消";
+			break;
+		default:
+			ret = "？？";
+			break;
+	}
+	return ret;
+}
