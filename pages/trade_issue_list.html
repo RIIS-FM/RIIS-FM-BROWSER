@@ -75,7 +75,7 @@
 						<th>操作</th>
 					</tr> 
 				</thead>
-				<tbody data-json="area3">
+				<tbody data-json="orderData">
 					
 				</tbody> 
 				<!--<tbody>
@@ -159,12 +159,12 @@
 
 </body>
 <script type="text/javascript" charset="utf-8"></script>
-<script src="../js/postData.js"></script>
+<script src="../js/util.js"></script>
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script type="text/javascript">
 	addEventListener("DOMContentLoaded",function () {
 		alert(1);
-		var url = "http://localhost:8080/RIIS-FM/fmTradeOrder/selectTradeOrder";
+		var url = getPort();
 		var data = '{"user":{"id":7},"pageModel":{"pageIndex":1,"pageSize":20},"requirement":{}}';
 		postData(url, data, 
 			function(data){
@@ -193,9 +193,9 @@
 				dom += '<tr>';
 				dom += '<td>'+cOrderCode.split(":")[1].substring(cOrderCode.split(":")[1].indexOf('"')+1,cOrderCode.split(":")[1].lastIndexOf('"'))+'</td>';
 				dom += '<td>'+cSenderName.split(":")[1].substring(cSenderName.split(":")[1].indexOf('"')+1,cSenderName.split(":")[1].lastIndexOf('"'))+'</td>';
-				dom += '<td>'+iOrderTypeId.split(":")[1]+'</td>';
+				dom += '<td>'+orderType(iOrderTypeId.split(":")[1])+'</td>';
 				dom += '<td>'+dOrderCreateTime.slice(dOrderCreateTime.indexOf(':"')+1).substring(dOrderCreateTime.slice(dOrderCreateTime.indexOf(':"')+1).indexOf('"')+1,dOrderCreateTime.slice(dOrderCreateTime.indexOf(':"')+1).lastIndexOf('"'))+'</td>';
-				dom += '<td>'+iOrderState.split(":")[1]+'</td>';
+				dom += '<td>'+orderState(iOrderState.split(":")[1])+'</td>';
 				dom += '<td>'+'<a href="#" class="btn_30b">查看</a>'+
 							'<a href="#" class="btn_30b">修改</a>'+
 							'<a href="#" class="btn_30g btn_disabled">提交</a>'+
@@ -204,14 +204,7 @@
 				dom += '</tr>'; 
 				
 				}
-				$('[data-json=area3]').html(dom);   
-				
-				/*$(orderList).each(function (i,item){ 
-					 dom = '';
-					 
-					 alert(item.fmTradeOrderInfoBaseEntity.cOrderCode);
-				
-				})*/
+				$('[data-json=orderData]').html(dom);   
 				
 			});
 		})
