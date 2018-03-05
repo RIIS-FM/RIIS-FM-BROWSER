@@ -3770,6 +3770,508 @@ a, a:hover {
   height: 0;
 }
 
+.input_box_txt5 {
+  float: left;
+}
+
+.input_box_txt5 dl:after {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0;
+}
+
+.input_box_txt5 dl dt {
+  width: 100px;
+  height: 46px;
+  text-align: right;
+  font-size: 14px;
+  line-height: 36px;
+  margin-right: 15px;
+  padding: 5px 0;
+  float: left;
+  color: #999;
+}
+
+.input_box_txt5 dl dd {
+  width: 160px;
+  float: left;
+  margin: 5px 0;
+  text-align: left;
+  font-size: 14px;
+  line-height: 36px;
+}
+
+.input_box_txt5 dl dd:after {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0;
+}
+
+.input_box_txt6 dl:after {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0;
+}
+
+.input_box_txt6 dl dt {
+  width: 100px;
+  height: 46px;
+  text-align: right;
+  font-size: 14px;
+  line-height: 36px;
+  margin-right: 15px;
+  padding: 5px 0;
+  float: left;
+  color: #999;
+}
+
+.input_box_txt6 dl dd {
+  width: 550px;
+  float: left;
+  margin: 5px 0;
+  text-align: left;
+  font-size: 14px;
+  line-height: 36px;
+}
+
+.input_box_txt6 dl dd:after {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0;
+}
+
+.input_box_s4 {
+  float: left;
+}
+
+.input_box_s4 dl:after {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0;
+}
+
+.input_box_s4 dl dt {
+  width: 100px;
+  height: 46px;
+  text-align: left;
+  font-size: 14px;
+  line-height: 36px;
+  margin-right: 5px;
+  padding: 5px 0;
+  float: left;
+  color: #333;
+}
+
+.input_box_s4 dl dd {
+  width: 200px;
+  float: left;
+  margin: 5px 0;
+  text-align: left;
+  font-size: 14px;
+  line-height: 36px;
+}
+
+.input_box_s4 dl dd input, .input_box_s4 dl dd a, .input_box_s4 dl dd label, .input_box_s4 dl dd textarea, .input_box_s4 dl dd span, .input_box_s4 dl dd select {
+  float: left;
+}
+
+.input_box_s4 dl dd input[type="text"], .input_box_s4 dl dd input[type="password"], .input_box_s4 dl dd input[type="date"], .input_box_s4 dl dd select {
+  width: 160px;
+  height: 36px;
+  border: #ccc 1px solid;
+  color: #333;
+  font-size: 14px;
+  line-height: 34px;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  padding: 0 10px;
+  margin-right: 10px;
+}
+
+.input_box_s4 dl dd input[type="text"]:hover, .input_box_s4 dl dd input[type="text"]:focus, .input_box_s4 dl dd input[type="password"]:hover, .input_box_s4 dl dd input[type="password"]:focus, .input_box_s4 dl dd input[type="date"]:hover, .input_box_s4 dl dd input[type="date"]:focus, .input_box_s4 dl dd select:hover, .input_box_s4 dl dd select:focus {
+  border: #666 1px solid;
+}
+
+.input_box_s4 dl dd input[type="radio"], .input_box_s4 dl dd input[type="checkbox"] {
+  margin: 14px 5px 0 0;
+}
+
+.input_box_s4 dl dd label {
+  margin-right: 30px;
+}
+
+.input_box_s4 dl dd select {
+  margin-right: 20px;
+}
+
+.input_box_s4 dl dd input.big1 {
+  width: 500px;
+}
+
+.input_box_s4 dl dd input.small1 {
+  width: 160px;
+}
+
+.input_box_s4 dl dd select.big {
+  width: 160px;
+}
+
+.input_box_s4 dl dd select.small {
+  width: 120px;
+}
+
+.input_box_s4 dl dd textarea {
+  width: 360px;
+  height: 120px;
+  resize: none;
+  border: #ccc 1px solid;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  padding: 7px;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 5px;
+}
+
+.input_box_s4 dl dd textarea:hover, .input_box_s4 dl dd textarea:focus {
+  border: #666 1px solid;
+}
+
+.input_box_s4 dl dd:after, .input_box_s4 dl dd label:after {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0;
+}
+
+.input_box_s5 dl:after {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0;
+}
+
+.input_box_s5 dl dt {
+  width: 100px;
+  height: 46px;
+  text-align: left;
+  font-size: 14px;
+  line-height: 36px;
+  margin-right: 5px;
+  padding: 5px 0;
+  float: left;
+  color: #333;
+}
+
+.input_box_s5 dl dd {
+  width: 500px;
+  float: left;
+  margin: 5px 0;
+  text-align: left;
+  font-size: 14px;
+  line-height: 36px;
+}
+
+.input_box_s5 dl dd input, .input_box_s5 dl dd a, .input_box_s5 dl dd label, .input_box_s5 dl dd textarea, .input_box_s5 dl dd span, .input_box_s5 dl dd select {
+  float: left;
+}
+
+.input_box_s5 dl dd input[type="text"], .input_box_s5 dl dd input[type="password"], .input_box_s5 dl dd input[type="date"], .input_box_s5 dl dd select {
+  width: 160px;
+  height: 36px;
+  border: #ccc 1px solid;
+  color: #333;
+  font-size: 14px;
+  line-height: 34px;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  padding: 0 10px;
+  margin-right: 10px;
+}
+
+.input_box_s5 dl dd input[type="text"]:hover, .input_box_s5 dl dd input[type="text"]:focus, .input_box_s5 dl dd input[type="password"]:hover, .input_box_s5 dl dd input[type="password"]:focus, .input_box_s5 dl dd input[type="date"]:hover, .input_box_s5 dl dd input[type="date"]:focus, .input_box_s5 dl dd select:hover, .input_box_s5 dl dd select:focus {
+  border: #666 1px solid;
+}
+
+.input_box_s5 dl dd input[type="radio"], .input_box_s5 dl dd input[type="checkbox"] {
+  margin: 14px 5px 0 0;
+}
+
+.input_box_s5 dl dd label {
+  margin-right: 30px;
+}
+
+.input_box_s5 dl dd select {
+  margin-right: 20px;
+}
+
+.input_box_s5 dl dd input.big1 {
+  width: 500px;
+}
+
+.input_box_s5 dl dd input.small1 {
+  width: 160px;
+}
+
+.input_box_s5 dl dd select.big {
+  width: 160px;
+}
+
+.input_box_s5 dl dd select.small {
+  width: 120px;
+}
+
+.input_box_s5 dl dd textarea {
+  width: 360px;
+  height: 120px;
+  resize: none;
+  border: #ccc 1px solid;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  padding: 7px;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 5px;
+}
+
+.input_box_s5 dl dd textarea:hover, .input_box_s5 dl dd textarea:focus {
+  border: #666 1px solid;
+}
+
+.input_box_s5 dl dd:after, .input_box_s5 dl dd label:after {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0;
+}
+
+.input_box_s6 dl:after {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0;
+}
+
+.input_box_s6 dl dt {
+  width: 80px;
+  height: 46px;
+  text-align: left;
+  font-size: 14px;
+  line-height: 36px;
+  margin-right: 5px;
+  padding: 5px 0;
+  float: left;
+  color: #333;
+}
+
+.input_box_s6 dl dd {
+  width: 190px;
+  float: left;
+  margin: 5px 0;
+  text-align: left;
+  font-size: 14px;
+  line-height: 36px;
+}
+
+.input_box_s6 dl dd input, .input_box_s6 dl dd a, .input_box_s6 dl dd label, .input_box_s6 dl dd textarea, .input_box_s6 dl dd span, .input_box_s6 dl dd select {
+  float: left;
+}
+
+.input_box_s6 dl dd input[type="text"], .input_box_s6 dl dd input[type="password"], .input_box_s6 dl dd input[type="date"], .input_box_s6 dl dd select {
+  width: 180px;
+  height: 36px;
+  border: #ccc 1px solid;
+  color: #333;
+  font-size: 14px;
+  line-height: 34px;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  padding: 0 10px;
+  margin-right: 10px;
+}
+
+.input_box_s6 dl dd input[type="text"]:hover, .input_box_s6 dl dd input[type="text"]:focus, .input_box_s6 dl dd input[type="password"]:hover, .input_box_s6 dl dd input[type="password"]:focus, .input_box_s6 dl dd input[type="date"]:hover, .input_box_s6 dl dd input[type="date"]:focus, .input_box_s6 dl dd select:hover, .input_box_s6 dl dd select:focus {
+  border: #666 1px solid;
+}
+
+.input_box_s6 dl dd input[type="radio"], .input_box_s6 dl dd input[type="checkbox"] {
+  margin: 14px 5px 0 0;
+}
+
+.input_box_s6 dl dd label {
+  margin-right: 30px;
+}
+
+.input_box_s6 dl dd select {
+  margin-right: 20px;
+}
+
+.input_box_s6 dl dd input.big1 {
+  width: 500px;
+}
+
+.input_box_s6 dl dd input.small1 {
+  width: 160px;
+}
+
+.input_box_s6 dl dd select.big {
+  width: 180px;
+}
+
+.input_box_s6 dl dd select.small {
+  width: 120px;
+}
+
+.input_box_s6 dl dd textarea {
+  width: 360px;
+  height: 120px;
+  resize: none;
+  border: #ccc 1px solid;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  padding: 7px;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 5px;
+}
+
+.input_box_s6 dl dd textarea:hover, .input_box_s6 dl dd textarea:focus {
+  border: #666 1px solid;
+}
+
+.input_box_s6 dl dd:after, .input_box_s6 dl dd label:after {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0;
+}
+
+.input_box_s7 dl:after {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0;
+}
+
+.input_box_s7 dl dt {
+  width: 80px;
+  height: 46px;
+  text-align: left;
+  font-size: 14px;
+  line-height: 36px;
+  margin-right: 5px;
+  padding: 5px 0;
+  float: left;
+  color: #333;
+}
+
+.input_box_s7 dl dd {
+  width: 400px;
+  float: left;
+  margin: 5px 0;
+  text-align: left;
+  font-size: 14px;
+  line-height: 36px;
+}
+
+.input_box_s7 dl dd input, .input_box_s7 dl dd a, .input_box_s7 dl dd label, .input_box_s7 dl dd textarea, .input_box_s7 dl dd span, .input_box_s7 dl dd select {
+  float: left;
+}
+
+.input_box_s7 dl dd input[type="text"], .input_box_s7 dl dd input[type="password"], .input_box_s7 dl dd input[type="date"], .input_box_s7 dl dd select {
+  width: 180px;
+  height: 36px;
+  border: #ccc 1px solid;
+  color: #333;
+  font-size: 14px;
+  line-height: 34px;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  padding: 0 10px;
+  margin-right: 10px;
+}
+
+.input_box_s7 dl dd input[type="text"]:hover, .input_box_s7 dl dd input[type="text"]:focus, .input_box_s7 dl dd input[type="password"]:hover, .input_box_s7 dl dd input[type="password"]:focus, .input_box_s7 dl dd input[type="date"]:hover, .input_box_s7 dl dd input[type="date"]:focus, .input_box_s7 dl dd select:hover, .input_box_s7 dl dd select:focus {
+  border: #666 1px solid;
+}
+
+.input_box_s7 dl dd input[type="radio"], .input_box_s7 dl dd input[type="checkbox"] {
+  margin: 14px 5px 0 0;
+}
+
+.input_box_s7 dl dd label {
+  margin-right: 30px;
+}
+
+.input_box_s7 dl dd select {
+  margin-right: 20px;
+}
+
+.input_box_s7 dl dd input.big1 {
+  width: 500px;
+}
+
+.input_box_s7 dl dd input.small1 {
+  width: 160px;
+}
+
+.input_box_s7 dl dd select.big {
+  width: 180px;
+}
+
+.input_box_s7 dl dd select.small {
+  width: 120px;
+}
+
+.input_box_s7 dl dd textarea {
+  width: 360px;
+  height: 120px;
+  resize: none;
+  border: #ccc 1px solid;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  padding: 7px;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 5px;
+}
+
+.input_box_s7 dl dd textarea:hover, .input_box_s7 dl dd textarea:focus {
+  border: #666 1px solid;
+}
+
+.input_box_s7 dl dd:after, .input_box_s7 dl dd label:after {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0;
+}
+
 .apply_content {
   width: 750px;
   height: 160px;
@@ -3915,4 +4417,31 @@ a, a:hover {
 
 .ev_ct a, .ev_ct span {
   margin-left: 10px;
+}
+
+.transport_info p {
+  padding-bottom: 10px;
+}
+
+.spl_element i {
+  font-style: normal;
+  display: inline-block;
+  padding: 0 10px;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border: #ccc 1px solid;
+  margin-left: 15px;
+}
+
+.spl_element i.on:after {
+  content: "√";
+  color: #7ac81f;
+  padding: 0 4px;
+}
+
+.spl_element i.off:after {
+  content: "×";
+  color: #f00;
+  padding: 0 4px;
 }

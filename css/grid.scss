@@ -381,6 +381,13 @@
 .input_box_s2{@include input_box_s(100px,900px,220px);dl dd input.big2{width: 624px;}}
 .input_box_s3{@include input_box_s(180px,800px,220px);}
 
+.input_box_txt5{@include input_box_txt(100px,160px); float: left;}
+.input_box_txt6{@include input_box_txt(100px,550px);}
+
+.input_box_s4{@include input_box_s(100px,200px,160px); float: left;}
+.input_box_s5{@include input_box_s(100px,500px,160px);}
+.input_box_s6{@include input_box_s(80px,190px,180px);}
+.input_box_s7{@include input_box_s(80px,400px,180px);}
 .apply_content{
                 width:750px;
                 height: 160px;
@@ -440,3 +447,14 @@
     &:hover,&.on{background-image: url(../img/ic_star_on.png);}
 }
 .ev_ct{p{padding-bottom: 10px;}a,span{margin-left: 10px;}}
+.transport_info{p{padding-bottom: 10px;}}
+.spl_element i{
+    font-style: normal;
+    display: inline-block;
+    padding: 0 10px;
+    @include bdr(2px);
+    @include bda();
+    margin-left: 15px;
+    &.on:after{content: "√"; color: $cg1;padding: 0 4px;}
+    &.off:after{content: "×"; color: $cr1;padding: 0 4px;}
+}
