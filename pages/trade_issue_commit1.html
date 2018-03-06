@@ -36,7 +36,7 @@
 								<p class="txal">成都市青羊工业总部基地N33青羊工业总部基地N33青羊工业总部基地N33</p>
 								<p class="txal">610000</p>
 							</td>
-							<td><a href="#" class="btn_24b" onclick="()" >选择</a></td>
+							<td><a href="#" class="btn_24b" onclick="choosePeo()" >选择</a></td>
 						</tr>
 						<tr>
 							<td>张三</td>
@@ -201,80 +201,80 @@
 			<div class="input_box_std">
 				<dl>
 					<dt>发送城市</dt>
-					<dd><input type="text" /></dd>
+					<dd><input type="text"  id="ftSenderCity"/></dd>
 				</dl>
 				<dl>
 					<dt>到达城市</dt>
-					<dd><input type="text" /></dd>
+					<dd><input type="text"  id="ftRecverCity"/></dd>
 				</dl>
 				<dl>
 					<dt>车次</dt>
-					<dd><input type="text" /></dd>
+					<dd><input type="text"  id="ftTrainNum"/></dd>
 				</dl>
 				<dl>
 					<dt>装车日期</dt>
-					<dd><input type="text" /></dd>
+					<dd><input type="text"  id="ftPredictLoadStartTime"/></dd>
 				</dl>
 				<dl>
 					<dt>发车日期</dt>
-					<dd><input type="text" /></dd>
+					<dd><input type="text"  id="ftPredictSendTime"/></dd>
 				</dl>
 				<dl>
 					<dt>装车站</dt>
-					<dd><input type="text" class="small1" /><input type="text" class="big1" placeholder="车站详细地址" /></dd>
+					<dd><input type="text" class="small1"  id="ftLoadStation"/><input type="text" class="big1" placeholder="车站详细地址"  id="ftLoadLocation"/></dd>
 				</dl>
 				<dl>
 					<dt>卸车站</dt>
-					<dd><input type="text" class="small1" /><input type="text" class="big1" placeholder="车站详细地址" /></dd>
+					<dd><input type="text" class="small1"  id="ftUnloadStation"/><input type="text" class="big1" placeholder="车站详细地址"  id="ftUnloadLocation"/></dd>
 				</dl>
 				<dl>
 					<dt>期望到达日期</dt>
-					<dd><input type="date" /></dd>
+					<dd><input type="date"  id="ftOrderDateline"/></dd>
 				</dl>
 				<dl>
 					<dt>选择经办人</dt>
-					<dd id="choose1" style="display: ;">
+					<dd id="choose1" style="display:;">
 						<a href="#" class="add_btn" onclick="showPop()">+选择发货经办人</a>
 						<a href="#" class="add_btn" onclick="showPop()">+选择收货经办人</a>
 					</dd>
 					<dd id="choose2" style="display:none;">
 						<div class="operator_infos">
 							<a href="#" class="switch_op" onclick="showPop()">更换</a>
-							<p class="txs18 ch1"><b id="tyr">中国通号设计研究院集团有限公司成都分公司</b>&nbsp;<b class="txs16 ch3">(托运人)</b></p>
-							<p class="ch1 txs14"><b id="shjbr">张三&nbsp;13823564598</b></p>
-							<p class="pdt05" id="dz">地址：成都市青羊区日月大道299号青羊工业基地N区33栋成都市青羊区日月大道299号青羊工业基地</p>
-							<p>邮编：610000</p>
-							<p>邮箱：zhangyuanwai@crsc.com</p>
+							<p class="txs18 ch1"><b id="ftSenderName">中国通号设计研究院集团有限公司成都分公司</b>&nbsp;<b class="txs16 ch3">(托运人)</b></p>
+							<p class="ch1 txs14"><b id="ftSenderPeo">张三</b>&nbsp;<b id="ftSenderPhone">13823564598</b></p>
+							<p class="pdt05" id="ftSenderAddress">地址：成都市青羊区日月大道299号青羊工业基地N区33栋成都市青羊区日月大道299号青羊工业基地</p>
+							<p id="ftSenderPostcode">邮编：610000</p>
+							<p id="ftSenderEmail">邮箱：zhangyuanwai@crsc.com</p>
 						</div>
 						<div class="operator_infos">
 							<a href="#" class="switch_op" onclick="showPop()">更换</a>
-							<p class="txs18 ch1"><b>中国铁路总公司工程管理中心</b>&nbsp;<b class="txs16 ch3">(收货人)</b></p>
-							<p class="ch1 txs14"><b>张三&nbsp;13823564598</b></p>
-		 					<p class="pdt05">地址：成都市青羊区日月大道299号青羊工业基地N区33栋</p>
-							<p>邮编：610000</p>
-							<p>邮箱：zhangyuanwai@crsc.com</p>
+							<p class="txs18 ch1"><b id="ftRecverName">中国铁路总公司工程管理中心</b>&nbsp;<b class="txs16 ch3">(收货人)</b></p>
+							<p class="ch1 txs14"><b id="ftRecverPeo">张三</b>&nbsp;<b id="ftRecverPhone">13823564598</b></p>
+		 					<p class="pdt05" id="ftRecverAddress">地址：成都市青羊区日月大道299号青羊工业基地N区33栋</p>
+							<p id="ftRecverPostcode">邮编：610000</p>
+							<p id="ftRecverEmail">邮箱：zhangyuanwai@crsc.com</p>
 						</div>
 					</dd>
 				</dl>
 				<dl>
 					<dt>货物名称</dt>
-					<dd><input type="text" /></dd>
+					<dd><input type="text"  id="ftGoodsName"/></dd>
 				</dl>
 				<dl>
 					<dt>总重量</dt>
-					<dd><input type="text" /><span>吨</span></dd>
+					<dd><input type="text"  id="ftGoodsWeight"/><span>吨</span></dd>
 				</dl>
 				<dl>
 					<dt>货物件数</dt>
-					<dd><input type="text" /><span>件</span></dd>
+					<dd><input type="text"  id="ftGoodsNumber"/><span>件</span></dd>
 				</dl>
 				<dl>
 					<dt>单件最大重量</dt>
-					<dd><input type="text" /><span>吨</span></dd>
+					<dd><input type="text"  id="ftEachGoodsMaxWeight"/><span>吨</span></dd>
 				</dl>
 				<dl>
 					<dt>剩余可订车数</dt>
-					<dd><input type="text" readonly="readonly" value="20" /></dd>
+					<dd><input type="text" readonly="readonly" value="20"  id="ft_sykdcs"/></dd>
 				</dl>
 				<dl>
 					<dt>物流服务</dt>
