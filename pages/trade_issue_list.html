@@ -4,6 +4,37 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" href="../css/grid.css" />
 <title>运输需求列表</title>
+<script type="text/javascript" charset="utf-8"></script>
+<script src="../js/util.js"></script>
+<script src="../js/trade_issue_list.js"></script>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript">
+	function getDraftOrder(){
+		alert(2);
+		var data = '{"user":{"id":7},"pageModel":{"pageIndex":1,"pageSize":6},"requirement":{"iOrderState": 0}}}';
+		getOrderInfo(data);
+		$("#draftBtn").attr('class', "cp on");
+		$("#allBtn").attr('class', "cp");
+		$("#auditBtn").attr('class', "cp");
+	}
+	
+	function getAuditOrder(){
+		alert(3);
+		var data = '{"user":{"id":7},"pageModel":{"pageIndex":1,"pageSize":6},"requirement":{"iOrderState": 1}}}';
+		getOrderInfo(data);
+		$("#draftBtn").attr('class', "cp");
+		$("#allBtn").attr('class', "cp");
+		$("#auditBtn").attr('class', "cp on");
+	}
+	function getAllOrder(){
+		alert(3);
+		var data = '{"user":{"id":7},"pageModel":{"pageIndex":1,"pageSize":6},"requirement":{}}}';
+		getOrderInfo(data);
+		$("#draftBtn").attr('class', "cp");
+		$("#allBtn").attr('class', "cp on");
+		$("#auditBtn").attr('class', "cp");
+	}
+</script>
 </head>
 
 <body>
@@ -59,9 +90,9 @@
 					<a href="#" class="btn_search"></a>
 				</div>
 				<span>运输需求列表</span>
-				<a href="#" class="cp on">全部</a>
-				<a href="#" class="cp">草稿</a>
-				<a href="#" class="cp">审核中</a>
+				<a href="#" class="cp on" onclick="getAllOrder()" id="allBtn">全部</a>
+				<a href="#" class="cp" onclick="getDraftOrder()" id="draftBtn">草稿</a>
+				<a href="#" class="cp" onclick="getAuditOrder()" id="auditBtn">审核中</a>
 			</div>
 			<!--单标题头end-->
 			<table class="table-normal">
@@ -79,21 +110,10 @@
 					
 				</tbody> 
 			</table>
-			<!--分页-->
-			<div class="pages">
-				<a href="#">＞|</a>
-				<a href="#">＞</a>
-				<a href="#">10</a>
-				<a href="#">9</a>
-				<span class="pdl06">...</span>
-				<a href="#">4</a>
-				<a href="#">3</a>
-				<a href="#" class="on">2</a>
-				<a href="#">1</a>
-				<a href="#">＜</a>
-				<a href="#">|＜</a>
-				<span><b class="keywd">2</b>/10</span>
-			</div>			
+			<!--分页-->	
+			
+			<div class="pages" data-json="pageData">
+			</div>
 			<!--分页 end-->
 			<!--单标题头-->
 			<div class="std_tt01 pdt30">				
@@ -124,37 +144,8 @@
 <script type="text/javascript">
 	addEventListener("DOMContentLoaded",function () {
 		alert(1);
-		var url = getOrderInfoPort();
-		var data = '{"user":{"id":7},"pageModel":{"pageIndex":1,"pageSize":3},"requirement":{}}';
-		postData(url, data, 
-			function(data){
-				var orderList = data.orderList;
-				var pageModel = data.pageModel;
-				var dom = '';
-				for( var i = 0; i < orderList.length; i++){
-					
-					dom += '<tr>';
-					dom += '<td>'+orderList[i].fmTradeOrderInfoBaseEntity.cOrderCode.toString()+'</td>';
-					dom += '<td>'+orderList[i].fmTradeOrderInfoBaseEntity.cSenderName.toString()+'</td>';
-					dom += '<td>'+orderType(orderList[i].fmTradeOrderInfoBaseEntity.iOrderTypeId)+'</td>';
-					dom += '<td>'+orderList[i].fmTradeOrderInfoBaseEntity.dOrderCreateTime.toString()+'</td>';
-					if (orderList[i].fmTradeOrderInfoBaseEntity.iOrderState === 3){
-						dom += '<td>'+
-						'<a href="#" onclick="showPop()" class="cr1">'+
-						orderState(orderList[i].fmTradeOrderInfoBaseEntity.iOrderState)+
-						'<span class="pdl04"><img src="../img/ic_viewdtl.png" /></span></a>'+
-						'</td>'
-					}else{
-						dom += '<td>'+orderState(orderList[i].fmTradeOrderInfoBaseEntity.iOrderState)+'</td>';
-					}
-								
-					dom += btnSty(orderList[i].fmTradeOrderInfoBaseEntity.iOrderState, orderList[i].fmTradeOrderInfoBaseEntity.iOrderTypeId);
-					dom += '</tr>'; 
-				
-				}
-				$('[data-json=orderData]').html(dom); 
-			
-			});
+		var data = '{"user":{"id":7},"pageModel":{"pageIndex":1,"pageSize":4},"requirement":{}}';
+		getOrderInfo(data);
 		})
 	
 </script>
